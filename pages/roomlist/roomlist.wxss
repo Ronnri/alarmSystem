@@ -1,0 +1,5 @@
+/* pages/roomlist/roomlist.wxss */
+page{background: #fff;}
+.wrapper{width: 100%;}
+.room-box{width: 95%;margin: 0 auto;border-bottom:1rpx solid #e5e5e5;}
+.cu-item{padding-top:20rpx;}

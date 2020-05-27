@@ -1,0 +1,18 @@
+<!--pages/components/verifycode-window/index.wxml-->
+<view class="cu-modal {{verifycode.verifycode?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">请输入校验码</view>
+      <view class="action" bindtap="closeWindow">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      <input placeholder="请输入四位校验码" auto-focus bindinput="bindKeyInput" type="number" value='{{inputValue}}'> </input>
+    </view>
+    <view class="cu-bar bg-white justify-end">
+
+    </view>
+  </view>
+</view>
+

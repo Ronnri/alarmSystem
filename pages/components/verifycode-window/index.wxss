@@ -1,0 +1,7 @@
+/* pages/components/verifycode-window/index.wxss */
+@import "../../../colorui/main.wxss";
+@import "../../../colorui/icon.wxss";
+.font-color{color:#fc4141!important;}
+.bg-color{background-color:#e93323!important;}
+.icon-color{color:#ff3c2b;}
+.line-color{border:1px soid #ff3c2b;}

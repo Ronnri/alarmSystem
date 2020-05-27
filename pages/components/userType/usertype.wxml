@@ -1,0 +1,12 @@
+<!--pages/components/userType/usertype_modal.wxml-->
+<view class="cu-modal bottom-modal {{isNew ?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white">
+      <view class="action text-green">确定</view>
+      <view class="action text-blue" bindtap="hideModal">取消</view>
+    </view>
+    <view class="padding-xl">
+      Modal 内容。
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/bindPhone/bindPhone.wxss */
+Page{
+  background: #fff;
+}

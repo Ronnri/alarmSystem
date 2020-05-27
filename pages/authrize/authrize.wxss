@@ -1,0 +1,11 @@
+/* pages/authrize/authrize.wxss */
+.main{ width: 100%;height: 100%;}
+.main .mask{width: 100%;height: 100%;position: absolute;top:0;background: #000;opacity: 0.6;}
+.main .bg-img{width: 100%;height: 100%;position: absolute;top:0;opacity: 0.4;}
+.main .bg-img image{width: 100%;height: 100%;}
+.wrapper{position: relative;z-index: 999;}
+.wrapper .logo-img{width:200rpx;height: 200rpx;margin-top:30%;}
+.wrapper .logo-img image{width: 100%;height: 100%;border-radius: 100rpx;}
+.wrapper .appname{font-size: 36rpx;}
+.btn-box{width: 100%;}
+.btn-box button{width: 50%; padding: 10rpx 0;}

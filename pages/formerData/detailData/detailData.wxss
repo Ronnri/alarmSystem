@@ -1,0 +1,4 @@
+/* pages/formerData/detailData/detailData.wxss */
+page{background: #fff;}
+.main{padding-bottom: 24rpx;}
+.nodata{width: 100%;height: 100%;background: #fff;}

@@ -1,0 +1,6 @@
+{
+
+  "usingComponents": {
+    "usertype_modal": "/pages/components/userType/usertype"
+  }
+}

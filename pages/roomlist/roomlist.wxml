@@ -1,0 +1,32 @@
+<!--pages/roomlist/roomlist.wxml-->
+<view>
+  <view class="cu-bar padding-bottom-xs">
+    <view class="action">
+      <text class="cuIcon-list icon-color"></text>
+      <text>当前已有房间列表</text>
+    </view>
+  </view>
+  <view class="wrapper">
+    <view class="cu-card article no-card room-box padding-tb-xs" wx:for="{{roomlist}}" wx:key="index">
+      <view class="cu-item" data-roomid="{{item.roomNumber}}" bindtap="goToLiveRoom">
+        <view class="content">
+          <image src="../../assets/images/float.png"></image>
+          <view class="desc">
+            <view class="text-df"> 
+              <text class="cuIcon-home icon-color padding-right-xs"></text>{{item.roomNumber}}-{{item.userName}}
+            </view >
+            <view class="text-df"> 
+              <text class="cuIcon-people icon-color padding-right-xs"></text>当前房间人数：{{item.curnum || 0}}
+            </view>
+            <view class="text-df"> 
+              <text class="cuIcon-time icon-color padding-right-xs"></text>直播时长：{{item.time || 0}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+  
+  <!-- <button bindtap="notice">订阅消息</button>
+  -->

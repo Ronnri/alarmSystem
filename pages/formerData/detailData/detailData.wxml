@@ -1,0 +1,84 @@
+<!--pages/formerData/detailData/detailData.wxml-->
+<view wx:if="detail!==null" class="main">
+  <!-- <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" show-location="true" style="width: 100%;" scale='{{scale}}' markers='{{markers}}' /> -->
+  <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" show-location="true" style="width: 100%; height: {{mapHeight}}rpx;" markers="{{markers}}" scale="12" />
+  <view class="padding-df margin-xs">
+    <view class="cu-list menu sm-border">
+      <view class="cu-item">
+        <view class="content">
+          <text class="cuIcon-location"></text>
+          <text>灾情地址</text>
+        </view>
+        <view class="action">
+          <text class=" text-sm">{{detail.locationName || '暂无'}}</text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="content">
+          <text class="cuIcon-location"></text>
+          <text>事故状态</text>
+        </view>
+        <view class="action">
+          <text class=" text-sm">{{detail.accidentState==0?'处理中':'处理完成'}}</text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="content">
+          <text class="cuIcon-location"></text>
+          <text class="">险情等级</text>
+        </view>
+        <view class="action">
+          <text class=" text-sm">{{detail.accidentLevel+'级' || '暂无'}}</text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="content">
+          <text class="cuIcon-time"></text>
+          <text class="">报警时间</text>
+        </view>
+        <view class="action">
+          <text class=" text-sm">{{detail.time_text || '暂无'}}</text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="content">
+          <text class="cuIcon-phone"></text>
+          <text class="">报警人电话</text>
+        </view>
+        <view class="action">
+          <text class=" text-sm">{{detail.witnessPhone || '暂无'}}</text>
+        </view>
+      </view>
+      <view class="cu-item padding-lr-sm">
+        <view class="content padding-tb-sm">
+          <view class=" padding-tb-sm">
+            灾情描述
+          </view>
+          <view class="text-sm">
+            <text class="cuIcon-infofill margin-right-xs"></text> {{detail.info || '暂无'}}</view>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="content padding-tb-sm">
+          <view class=" padding-tb-sm">
+            出警信息
+          </view>
+          <view class="text-sm">
+            <text class="cuIcon-infofill margin-right-xs"></text> {{detail.dutyInfo || '暂无'}}</view>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="content padding-tb-sm">
+          <view class=" padding-tb-sm">
+            事故总结
+          </view>
+          <view class="text-sm">
+            <text class="cuIcon-infofill margin-right-xs"></text> {{detail.accidentSummary || '暂无'}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else class="nodata margin-xl">
+  <image src="../../assets/images/nodata3.jpg"></image>
+</view>

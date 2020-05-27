@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "直播",
+  "usingComponents":{
+    "i-icon":"/iview/icon/index"
+  }
+}

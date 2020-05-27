@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "verifycode-window": "/pages/components/verifycode-window/index"
+  },
+  "navigationBarTitleText": "绑定手机号"
+
+}

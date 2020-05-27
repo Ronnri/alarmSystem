@@ -1,0 +1,27 @@
+<!--pages/contact/contact.wxml-->
+<view>
+    <view class="cu-bar bg-white solid-bottom ">
+      <view class="action">
+        <text class="cuIcon-phone icon-color "></text> 联系其他部门
+      </view>
+    </view>
+  <view class="cu-list menu" wx:if="{{contactList.length}}">
+      <view class="cu-item arrow" wx:for="{{contactList}}" wx:key="index" bindtap="callPhone" data-index="{{index}}">
+        <view class="content padding-sm">
+          <view>
+            <text class="cuIcon-home icon-color margin-right-xs text-sl"></text> 
+            {{item.name}}
+          </view>
+          <view class="text-gray text-sm">
+            <text class="cuIcon-infofill margin-right-xs"></text> {{item.detail}}</view>
+        </view>
+      </view>
+  </view>
+</view>
+
+<!-- <button bindtap="baojing">报警
+</button>
+<button bindtap="xiaofang">消防
+</button>
+<button bindtap="gaoji">高级
+</button> -->

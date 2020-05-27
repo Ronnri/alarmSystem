@@ -1,0 +1,23 @@
+<!--pages/authrize/authrize.wxml-->
+<view class="main">
+  <view class="bg-img">
+    <image src="./../../assets/images/bg.jpg"></image>
+  </view>
+  <view class="mask">
+  </view>
+  <view class="wrapper">
+    <view class="flex padding justify-center">
+      <view class=" radius logo-img ">
+        <image src="./../../assets/images/bg.jpg" class="shadow-blur"></image>
+      </view>
+    </view>
+    <view class="margin-xs text-center text-white appname">
+      <text class="shadow">全椒智慧消防平台</text>
+    </view>
+    <view class="margin-top-sm" >
+      <view class="btn-box text-center">
+        <button class="bg-color text-white text-lg shadow round" open-type="getUserInfo" bindtap="setUserInfo">微信一键授权登录</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/formerData/formerData.wxml-->
+
+<view class="wrapper" wx:if="{{dataList.length>0}}">
+  <view class="cu-card article no-card room-box padding-tb-xs" wx:for="{{dataList}}" wx:key="index" >
+    <view class="cu-item padding-item" data-dataID="{{item.fireTime}}" data-lon="{{item.locationLongitude}}" data-lat="{{item.locationLatitude}}" data-index="{{index}}" bindtap="goToDataDetail">
+      <view class="content">
+        <image src="../../assets/images/float.png"></image>
+        <view class="desc">
+          <view class="text-df">
+            <text class="cuIcon-time icon-color padding-right-xs"></text>{{item.time_text}}
+          </view>
+          <view class="text-df">
+            <text class="cuIcon-location icon-color padding-right-xs"></text>
+            <text>{{item.locationName}}</text>
+          </view>
+          <view class="text-df">
+            <text class="cuIcon-location icon-color padding-right-xs"></text>{{item.accidentLevel}}级事故
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view wx:else class="nodata padding-xl">
+  <image src="../../assets/images/nodata3.jpg"></image>
+</view>

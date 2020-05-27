@@ -1,0 +1,13 @@
+/* pages/user/user.wxss */
+
+page{
+  background-color: white;
+}
+
+.thisMap{
+  margin-top: 50rpx;
+}
+
+.carcss{
+  background: white
+}
